@@ -23,6 +23,12 @@
 		            width:          100%;
 		            height:         100%;
 		        }
+                
+                .gantt-myCss{
+                    font-weight:bold !important;
+                    color:white !important;
+                    background-color:green !important;
+                }
 
 		        .bg-loading:before {
 		            content: ' ';
@@ -30,12 +36,26 @@
 		            vertical-align: middle;
 		            height: 100%;
 		        }
+                
+                .alert-success {
+                    background-color: #dff0d8;
+                    border-color: #d0e9c6;
+                    color: #3c763d;
+                }
 
 		        .bg-loading img {
 		            vertical-align: middle;
 		            display: inline-block;
 		            width: 10%;
 		        }
+                .important{
+                    border:2px solid rgba(250, 95, 95, 0.94);
+                    color:red;
+                    background:red;
+                }
+                .important .gantt_task_progress{
+                    background: #ff7775;
+                }
             </style>
         </head>
         <body>
@@ -74,26 +94,7 @@
                 status:''
             };
             
-            var demo_tasks;
-            const bgLoaderDiv = document.getElementsByClassName('bg-loading');
-            //Get the Project-Task data - in - JsonData
-            var projectId = '{!$CurrentPage.parameters.id}';
-            console.log('projectId '+projectId);
-            GanttChartv2_Ctrl.getProjectInfo( projectId,function(result,event) {
-                // body...
-                if(event.status) {
-                    console.log(result); 
-                    demo_tasks = result;
-                    
-                    gantt.init("gantt_here");
-                    gantt.parse(demo_tasks);
-                    bgLoaderDiv[0].style.display = 'none';
-                }else {
-                    alert('got an exception '+event.message);
-                }
-            });
-            
-            //Get the contacts
+             //Get the contacts
             var contacts = [];
             GanttChartv2_Ctrl.getContacts( function(result,event) {
                 // body...
@@ -107,8 +108,43 @@
                     alert('got an exception '+event.message);
                 }
             });
+            
+            var demo_tasks;
+            const bgLoaderDiv = document.getElementsByClassName('bg-loading');
+            //Get the Project-Task data - in - JsonData
+            var projectId = '{!$CurrentPage.parameters.id}';
+            console.log('projectId '+projectId);
+            GanttChartv2_Ctrl.getProjectInfo( projectId,function(result,event) {
+                // body...
+                if(event.status) {
+                    console.log(result); 
+                    demo_tasks = result;
+                    
+                    gantt.init("gantt_here");
+                    gantt.parse(demo_tasks);
+                    /* gantt.templates.task_text=function(start,end,task){
+                        return "<b>Text:</b> "+task.text+",<b> Holders:</b> "+contacts.find(x => x.id == task.assignedTo ).label;
+                    };*/
+                    bgLoaderDiv[0].style.display = 'none';
+                }else {
+                    alert('got an exception '+event.message);
+                }
+            });
+            
+           //defines the style of task bars
+            /*  gantt.templates.grid_row_class = gantt.templates.task_row_class = function(start, end, task){
+                return "custom_row";
+            };
+    
+            gantt.templates.task_class=function(start,end,task){
+                if(task.progress > 0.5){
+                     return "";
+                }else{
+                    return "important";
+                }
+            };*/
 
-             //Get the contacts
+            //Get the status
             var taskStatus = [
 	            {key:"Open",label:"Open"},
 	            {key:"In Progress",label:"In Progress"},
@@ -116,6 +152,7 @@
 	            {key:"Closed",label:"Closed"},
 	            {key:"Close",label:"Close"}
 	        ];
+	        
 	        
             gantt.locale.labels.section_assignedTo = "Assigned To";  
             gantt.locale.labels.section_status = "Status";  
@@ -141,7 +178,16 @@
                 {name:"add",        label:"",           width:44 }
             ];
             
-            gantt.config.grid_width = 400;
+            /*  gantt.templates.tooltip_date_format=function (date){
+                var formatFunc = gantt.date.date_to_str("%Y / %m / %d %H:%i");
+                return formatFunc(date);
+            }
+            gantt.templates.tooltip_text = function(start,end,task){
+                return "<b>Task:</b> "+task.text+"<br/><b>Duration:</b> " + task.duration+"<br/><b>Start Date:</b> "+task.start_date;
+            };*/
+            
+            
+            gantt.config.grid_width = 375;
             gantt.config.date_grid = "%F %d";
             gantt.config.scale_height  = 60;
             gantt.config.subscales = [
@@ -157,11 +203,8 @@
                 console.log(task);
                 console.log('Is new Task ?'+is_new);
 
-
-
-
                 // if(task.parent === 0) task.parent = projectId;
-                
+                 bgLoaderDiv[0].style.display = 'block';
                  if(!task.text){
 			        gantt.message({type:"error", text:"Enter task description!"});
 			        return false;
@@ -191,7 +234,7 @@
                  if(is_new === true){
 			    	newData.Id = null;
 			    }else{
-			    	alert('Update the task..'+task.id);
+                    //alert('Update the task..'+task.id);
 			    	console.log(task.id);
 			    	newData.id = task.id;
 			    }
@@ -202,8 +245,18 @@
 
                 	function(result,event) {
                     // body...
+                         bgLoaderDiv[0].style.display = 'none';
                     if(event.status) {
                         console.log(result); 
+                        if(is_new === true){
+                            //gantt.message({type:"success", text:"Enter task description!"});
+                     		gantt.message({text:"Task Created successfully !",
+                                            expire:1000,
+                                            type:"alert-success"});	
+                        }else{
+                        	gantt.message({ type:"alert-success", text:"Task Updated successfully !" });
+                        }
+                        
                         
                     }else {
                         
@@ -225,7 +278,7 @@
 
             gantt.attachEvent("onLightboxDelete", function(id, task, is_new){
                 console.log(id);
-
+				
                 GanttChartv2_Ctrl.deleteTask(id,function(result,event) {
                     // body...
                     if(event.status) {
@@ -242,6 +295,103 @@
 
                 return true;
             });
+            
+             var movedTask;
+		        gantt.attachEvent("onTaskDrag", function(id, mode, task, original){
+
+		            // console.log('id '+id);
+		            console.log(mode);
+		            movedTask = task;
+
+		        });
+		        
+		          gantt.attachEvent("onAfterTaskDrag", function(id, mode, e){
+                      //console.log('id '+id);
+                      //console.log('Event '+e);
+                      //console.log(mode);
+                      //console.log(bgLoaderDiv[0]);
+                      bgLoaderDiv[0].style.display = 'block';
+		             var modes = gantt.config.drag_mode;
+		              if(id ==  movedTask.id){
+                          //console.log(movedTask);
+                             switch (mode){
+                                case modes.move:
+                                    console.log('move');
+                                     updateMoveTask(movedTask);
+                                break;
+                                case modes.resize:
+                                    console.log('resize');
+                                     updateMoveTask(movedTask);
+                                break;
+                                case modes.progress:
+                                    console.log('progress');
+                                     updateProgressTask(movedTask);
+                                break;
+                    
+                            }
+		              }else
+		                  console.log('Old task ='+movedTask.id);
+
+		        });
+            
+            
+            
+            var upTask = {
+            	id:'',
+                start_date:'',
+                end_date :''
+            };
+            
+            
+            var updateMoveTask = function(task){
+            	console.log('Task Moved ..');
+                console.log(task);
+                
+                upTask.start_date = convert(task.start_date);
+                upTask.end_date = convert(task.end_date);
+			    upTask.id = task.id;
+			   
+                console.log('Sending upTask ');
+                console.log(upTask);
+                GanttChartv2_Ctrl.udpateTask(upTask,
+
+                	function(result,event) {
+                    // body...
+                         bgLoaderDiv[0].style.display = 'none';
+                    if(event.status) {
+                        console.log(result); 
+                        	gantt.message({ type:"alert-success", text:"Task Updated successfully !" });
+                        
+                    }else {
+                        
+                        alert('got an exception '+event.message);
+                    }
+                });
+            };
+            
+            var updateProgressTask = function(task){
+            	console.log('Task progressed ..');
+                console.log(task);
+                GanttChartv2_Ctrl.udpateProgressTask(task.id,task.progress,
+
+                	function(result,event) {
+                    // body...
+                         bgLoaderDiv[0].style.display = 'none';
+                    if(event.status) {
+                        console.log(result); 
+                        	gantt.message({ type:"alert-success", text:"Task Updated successfully !" });
+                        
+                    }else {
+                        
+                        alert('got an exception '+event.message);
+                    }
+                });
+            };
+            
+            var updateResizeTask = function(task){
+            	console.log('Resize Moved ..');
+                console.log(task);
+            };
             </script>
         </body>
     </html>

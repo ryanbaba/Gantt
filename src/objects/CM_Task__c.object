@@ -344,13 +344,24 @@ if(Len( Text(Task_Stage__c))&gt;0, &apos;Open &apos; &amp; Text(Task_Stage__c), 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Task_Progress__c</fullName>
+        <externalId>false</externalId>
+        <label>Task Progress</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
         <fullName>Task_Stage__c</fullName>
         <externalId>false</externalId>
         <label>Stage</label>
         <picklist>
             <picklistValues>
-                <fullName>None</fullName>
-                <default>false</default>
+                <fullName>Open</fullName>
+                <default>true</default>
             </picklistValues>
             <picklistValues>
                 <fullName>In Progress</fullName>
@@ -366,6 +377,14 @@ if(Len( Text(Task_Stage__c))&gt;0, &apos;Open &apos; &amp; Text(Task_Stage__c), 
             </picklistValues>
             <picklistValues>
                 <fullName>Close</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
                 <default>false</default>
             </picklistValues>
             <restrictedPicklist>true</restrictedPicklist>

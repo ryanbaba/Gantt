@@ -80,6 +80,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>GanttChartv2_Ctrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>GnattChartConroller</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -762,6 +766,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CM_Task__c.Task_Duration__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CM_Task__c.Task_Progress__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4143,6 +4152,9 @@
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>OpportunityTeamMember-Opportunity Team Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Order-Order Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4574,6 +4586,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>GanttChart</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>GanttChartv2</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

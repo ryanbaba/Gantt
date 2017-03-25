@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accounts --></label>
+        <name>Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquired Courtesy Licenses --></label>
+        <name>Acquired_Courtesy_Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asked client for login --></label>
+        <name>Asked_client_for_login__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assets --></label>
+        <name>Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing --></label>
+        <name>Billing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T&amp;M</masterLabel>
+            <translation><!-- T&amp;M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Model --></label>
+        <name>Business_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaigns --></label>
+        <name>Campaigns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cases --></label>
+        <name>Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition 1 Type --></label>
+        <name>Condition_1_Type__c</name>
+        <picklistValues>
+            <masterLabel>Access &amp; Security</masterLabel>
+            <translation><!-- Access &amp; Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts &amp; Contacts</masterLabel>
+            <translation><!-- Accounts &amp; Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activities</masterLabel>
+            <translation><!-- Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigns</masterLabel>
+            <translation><!-- Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases &amp; Solutions</masterLabel>
+            <translation><!-- Cases &amp; Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Objects</masterLabel>
+            <translation><!-- Custom Objects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboards</masterLabel>
+            <translation><!-- Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads &amp; Opportunities</masterLabel>
+            <translation><!-- Leads &amp; Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products</masterLabel>
+            <translation><!-- Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSP</masterLabel>
+            <translation><!-- SSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workflow</masterLabel>
+            <translation><!-- Workflow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition 1 --></label>
+        <name>Condition_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition 2 Type --></label>
+        <name>Condition_2_Type__c</name>
+        <picklistValues>
+            <masterLabel>Access &amp; Security</masterLabel>
+            <translation><!-- Access &amp; Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts &amp; Contacts</masterLabel>
+            <translation><!-- Accounts &amp; Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activities</masterLabel>
+            <translation><!-- Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigns</masterLabel>
+            <translation><!-- Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases &amp; Solutions</masterLabel>
+            <translation><!-- Cases &amp; Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Objects</masterLabel>
+            <translation><!-- Custom Objects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboards</masterLabel>
+            <translation><!-- Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads &amp; Opportunities</masterLabel>
+            <translation><!-- Leads &amp; Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products</masterLabel>
+            <translation><!-- Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSP</masterLabel>
+            <translation><!-- SSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workflow</masterLabel>
+            <translation><!-- Workflow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition 2 --></label>
+        <name>Condition_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition 3 Type --></label>
+        <name>Condition_3_Type__c</name>
+        <picklistValues>
+            <masterLabel>Access &amp; Security</masterLabel>
+            <translation><!-- Access &amp; Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts &amp; Contacts</masterLabel>
+            <translation><!-- Accounts &amp; Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activities</masterLabel>
+            <translation><!-- Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigns</masterLabel>
+            <translation><!-- Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases &amp; Solutions</masterLabel>
+            <translation><!-- Cases &amp; Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Objects</masterLabel>
+            <translation><!-- Custom Objects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboards</masterLabel>
+            <translation><!-- Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads &amp; Opportunities</masterLabel>
+            <translation><!-- Leads &amp; Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products</masterLabel>
+            <translation><!-- Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSP</masterLabel>
+            <translation><!-- SSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workflow</masterLabel>
+            <translation><!-- Workflow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition 3 --></label>
+        <name>Condition_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition 4 Type --></label>
+        <name>Condition_4_Type__c</name>
+        <picklistValues>
+            <masterLabel>Access &amp; Security</masterLabel>
+            <translation><!-- Access &amp; Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts &amp; Contacts</masterLabel>
+            <translation><!-- Accounts &amp; Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activities</masterLabel>
+            <translation><!-- Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigns</masterLabel>
+            <translation><!-- Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases &amp; Solutions</masterLabel>
+            <translation><!-- Cases &amp; Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Objects</masterLabel>
+            <translation><!-- Custom Objects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboards</masterLabel>
+            <translation><!-- Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads &amp; Opportunities</masterLabel>
+            <translation><!-- Leads &amp; Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products</masterLabel>
+            <translation><!-- Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSP</masterLabel>
+            <translation><!-- SSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workflow</masterLabel>
+            <translation><!-- Workflow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition 4 --></label>
+        <name>Condition_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts --></label>
+        <name>Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracts --></label>
+        <name>Contracts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Objects --></label>
+        <name>Custom_Objects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dashboards --></label>
+        <name>Dashboards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Migration --></label>
+        <name>Data_Migration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edition --></label>
+        <name>Edition__c</name>
+        <picklistValues>
+            <masterLabel>PE</masterLabel>
+            <translation><!-- PE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TE</masterLabel>
+            <translation><!-- TE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Finished Configuration --></label>
+        <name>Finished_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours --></label>
+        <name>Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- If PE, # Mkt Licenses --></label>
+        <name>If_PE_Mkt_Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- If PE, other add-ons --></label>
+        <name>If_PE_other_add_ons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration --></label>
+        <name>Integration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads --></label>
+        <name>Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Licenses --></label>
+        <name>Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loaded Data --></label>
+        <name>Loaded_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 10 --></label>
+        <name>Note_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 11 --></label>
+        <name>Note_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 12 --></label>
+        <name>Note_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 13 --></label>
+        <name>Note_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 14 --></label>
+        <name>Note_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 15 --></label>
+        <name>Note_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 16 --></label>
+        <name>Note_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 17 --></label>
+        <name>Note_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 4 --></label>
+        <name>Note_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 5 --></label>
+        <name>Note_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 6 --></label>
+        <name>Note_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 7 --></label>
+        <name>Note_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 8 --></label>
+        <name>Note_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 9 --></label>
+        <name>Note_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes 1 --></label>
+        <name>Notes_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes 2 --></label>
+        <name>Notes_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes 3 --></label>
+        <name>Notes_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onsite travel expected --></label>
+        <name>Onsite_travel_expected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities --></label>
+        <name>Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Outlook Edition --></label>
+        <name>Outlook_Edition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performed BPR --></label>
+        <name>Performed_BPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performed Kickoff Meeting --></label>
+        <name>Performed_Kickoff_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performed Training --></label>
+        <name>Performed_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>Project_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Stage --></label>
+        <name>Project_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed &amp; Accepted</masterLabel>
+            <translation><!-- Completed &amp; Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluating offers</masterLabel>
+            <translation><!-- Evaluating offers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live - Design</masterLabel>
+            <translation><!-- Live - Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live - Implemented</masterLabel>
+            <translation><!-- Live - Implemented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open for offers</masterLabel>
+            <translation><!-- Open for offers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Status --></label>
+        <name>Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Type --></label>
+        <name>Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>DM</masterLabel>
+            <translation><!-- DM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSA</masterLabel>
+            <translation><!-- QSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSI</masterLabel>
+            <translation><!-- QSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSO</masterLabel>
+            <translation><!-- QSO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Received Data --></label>
+        <name>Received_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Questionnaire back --></label>
+        <name>Received_Questionnaire_back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received login --></label>
+        <name>Received_login__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Types --></label>
+        <name>Record_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reports --></label>
+        <name>Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Data --></label>
+        <name>Requested_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled BPR --></label>
+        <name>Scheduled_BPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Kickoff Meeting --></label>
+        <name>Scheduled_Kickoff_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Training --></label>
+        <name>Scheduled_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Self Service Portal --></label>
+        <name>Self_Service_Portal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Intro Email/Call --></label>
+        <name>Sent_Intro_Email_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Questionnaire --></label>
+        <name>Sent_Questionnaire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Validation --></label>
+        <name>Solution_Validation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solutions --></label>
+        <name>Solutions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Success Factors --></label>
+        <name>Success_Factors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training --></label>
+        <name>Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Integration Links --></label>
+        <name>Web_Integration_Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web-to-Cases --></label>
+        <name>Web_to_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web-to-Leads --></label>
+        <name>Web_to_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workflow --></label>
+        <name>Workflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- sForce Controls --></label>
+        <name>sForce_Controls__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>External Resource</layout>
+        <sections>
+            <label><!-- Client Summary --></label>
+            <section>Client Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Client Summary (cont) --></label>
+            <section>Client Summary (cont)</section>
+        </sections>
+        <sections>
+            <label><!-- Delivering the following Objects / Funct --></label>
+            <section>Delivering the following Objects / Funct</section>
+        </sections>
+        <sections>
+            <label><!-- Unique Conditions / Requirements / Obsta --></label>
+            <section>Unique Conditions / Requirements / Obsta</section>
+        </sections>
+        <sections>
+            <label><!-- Web Links --></label>
+            <section>Web Links</section>
+        </sections>
+        <sections>
+            <label><!-- Workflow of Tasks --></label>
+            <section>Workflow of Tasks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Client Summary --></label>
+            <section>Client Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Client Summary (cont) --></label>
+            <section>Client Summary (cont)</section>
+        </sections>
+        <sections>
+            <label><!-- Delivering the following Objects / Funct --></label>
+            <section>Delivering the following Objects / Funct</section>
+        </sections>
+        <sections>
+            <label><!-- Unique Conditions / Requirements / Obsta --></label>
+            <section>Unique Conditions / Requirements / Obsta</section>
+        </sections>
+        <sections>
+            <label><!-- Web Links --></label>
+            <section>Web Links</section>
+        </sections>
+        <sections>
+            <label><!-- Workflow of Tasks --></label>
+            <section>Workflow of Tasks</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Addtoourknowledgebase --></label>
+        <name>Addtoourknowledgebase</name>
+    </webLinks>
+</CustomObjectTranslation>

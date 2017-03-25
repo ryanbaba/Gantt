@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Offer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Offers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accepted --></label>
+        <name>Accepted__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No thank you</masterLabel>
+            <translation><!-- No thank you --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On deck</masterLabel>
+            <translation><!-- On deck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Availability --></label>
+        <name>Availability__c</name>
+        <picklistValues>
+            <masterLabel>Fully Engaged</masterLabel>
+            <translation><!-- Fully Engaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Engagement</masterLabel>
+            <translation><!-- Limited Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provide Insight</masterLabel>
+            <translation><!-- Provide Insight --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Rate Available --></label>
+        <name>Billing_Rate_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Projects__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>Resource__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Travel --></label>
+        <name>Travel__c</name>
+        <picklistValues>
+            <masterLabel>Cannot travel</masterLabel>
+            <translation><!-- Cannot travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No restrictions</masterLabel>
+            <translation><!-- No restrictions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Some restrictions</masterLabel>
+            <translation><!-- Some restrictions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of resource available --></label>
+        <name>of_resource_available__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Offer Layout</layout>
+        <sections>
+            <label><!-- Partner Fields --></label>
+            <section>Partner Fields</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

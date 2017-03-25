@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Record Expenses on a Project incurred by  Resource.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Air_Fare_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Air_Purchase_1__c  +  Air_Purchase_2__c  +  Air_Purchase_3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Air Fare Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Air_Purchase_1_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Air Purchase 1 Detail</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Air_Purchase_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Air Purchase 1</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Air_Purchase_2_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Air Purchase 2 Detail</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Air_Purchase_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Air Purchase 2</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Air_Purchase_3_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Air Purchase 3  Detail</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Air_Purchase_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Air Purchase 3</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approve__c</fullName>
+        <externalId>false</externalId>
+        <label>Approve</label>
+        <length>3</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable to</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Breakfast_Su__c</fullName>
+        <externalId>false</externalId>
+        <label>Breakfast (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Breakfast_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Breakfast (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Breakfast_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Breakfast (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Breakfast_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Breakfast (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Breakfast_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Breakfast (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Breakfast_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Breakfast (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Breakfast_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Breakfast (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Car_Rental_1_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Rental 1 Detail</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Car_Rental_2_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Rental 2 Detail</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Car_Rental_3_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Rental 3 Detail</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Car_Rental_Total_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Rental Total 2</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Car_Rental_Total_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Rental Total 3</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Car_Rental_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Car_Rental__c  +  Car_Rental_Total_2__c  +  Car_Rental_Total_3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Car Rental Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Car_Rental__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Rental Total 1</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dinner_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Dinner (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dinner_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Dinner (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dinner_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Dinner (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dinner_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Dinner (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dinner_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Dinner (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dinner_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Dinner (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dinner_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Dinner (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Gas_f__c  +  Gas_m__c  +  Gas_t__c  +  Gas_w__c  +  Gas_th__c  +  Gas_sa__c  +  Gas_su__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gas Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Gas (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Gas (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Gas (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Gas (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Gas (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Gas (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Gas (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Tax_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel &amp; Tax (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Tax_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel &amp; Tax (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Tax_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel &amp; Tax (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Tax_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel &amp; Tax (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Tax_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel &amp; Tax (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Tax_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel &amp; Tax (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Tax_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel &amp; Tax (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Hotel_Tax_m__c  +  Hotel_Tax_t__c  +  Hotel_Tax_w__c  +  Hotel_Tax_th__c  +  Internet_f__c  +  Hotel_Tax_sa__c  +  Hotel_Tax_su__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hotel Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Internet_f__c  +  Internet_m__c  +  Internet_t__c  +  Internet_w__c  +  Internet_th__c  +  Internet_sa__c  +  Internet_su__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Internet Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Internet_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_Su__c</fullName>
+        <externalId>false</externalId>
+        <label>Laundry (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Laundry_f__c  +  Laundry_m__c  +  Laundry_t__c  +  Laundry_w__c  +  Laundry_th__c  +  Laundry_sa__c  +  Laundry_Su__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Laundry Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Laundry (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Laundry (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Laundry (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Laundry (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Laundry (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Laundry_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Laundry (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lunch_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Lunch (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lunch_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Lunch (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lunch_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Lunch (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lunch_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Lunch (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lunch_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Lunch (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lunch_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Lunch (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lunch_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Lunch (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Meals_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>TOTAL_MEALS_f__c  +  TOTAL_MEALS_sa__c  +  TOTAL_MEALS_su__c  +  TOTAL_MEALS_m__c  +  TOTAL_MEALS_t__c  +  TOTAL_MEALS_w__c  +  TOTAL_MEALS_th__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Meals Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Mileage_f__c  +  Mileage_m__c  +  Mileage_t__c  +  Mileage_w__c  +  Mileage_th__c  +  Mileage_sa__c  +  Mileage_su__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mileage Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Mileage (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Mileage (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Mileage (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Mileage (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Mileage (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Mileage (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mileage_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Mileage (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_1_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 1 (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_1_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 1 (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_1_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 1 (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_1_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 1 (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_1_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 1 (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_1_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 1 (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_1_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 1 (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_2_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 2 (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_2_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 2 (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_2_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 2 (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_2_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 2 (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_2_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 2 (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_2_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 2 (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_2_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Misc 2 (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Notes_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes (f)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes (m)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes (sa)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes (su)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes (t)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes (th)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes (w)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Other_Food_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Food (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Other_Food_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Food (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Other_Food_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Food (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Other_Food_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Food (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Other_Food_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Food (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Other_Food_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Food (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Other_Food_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Food (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Other_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Misc_1_f__c  +  Misc_1_m__c  +  Misc_1_sa__c  +  Misc_1_su__c  +  Misc_1_t__c  +  Misc_1_th__c  +  Misc_1_w__c  + Misc_2_f__c  +  Misc_2_m__c  +  Misc_2_sa__c  +  Misc_2_su__c  +  Misc_2_t__c  +  Misc_2_th__c  +  Misc_2_w__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payable_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Payable to</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Projects__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>SFDC_Projects__c</referenceTo>
+        <relationshipName>R00N40000001HoCfEAK</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>REPORT_TOTAL__c</fullName>
+        <externalId>false</externalId>
+        <formula>Meals_Total__c  +  Hotel_Total__c  +  Air_Fare_Total__c  +  Car_Rental_Total__c  +  Other_Total__c  +  Internet_Total__c  +  Laundry_Total__c  +  Mileage_Total__c  +  Gas_Total__c  +  Taxi_Total__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>REPORT TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Resource</label>
+        <referenceTo>SFDC_Resource__c</referenceTo>
+        <relationshipName>R00N40000001HoCaEAK</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Submit__c</fullName>
+        <externalId>false</externalId>
+        <label>Submit</label>
+        <length>3</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TOTAL_MEALS_f__c</fullName>
+        <externalId>false</externalId>
+        <formula>Breakfast_f__c   +  Lunch_f__c  +  Dinner_f__c  +  Other_Food_f__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MEALS (f)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TOTAL_MEALS_m__c</fullName>
+        <externalId>false</externalId>
+        <formula>Breakfast_m__c   +  Lunch_m__c  +  Dinner_m__c  +  Other_Food_m__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MEALS (m)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TOTAL_MEALS_sa__c</fullName>
+        <externalId>false</externalId>
+        <formula>Breakfast_sa__c   +  Lunch_sa__c  +  Dinner_sa__c  +  Other_Food_sa__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MEALS (sa)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TOTAL_MEALS_su__c</fullName>
+        <externalId>false</externalId>
+        <formula>Breakfast_Su__c   +  Lunch_su__c  +  Dinner_su__c  +  Other_Food_su__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MEALS (su)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TOTAL_MEALS_t__c</fullName>
+        <externalId>false</externalId>
+        <formula>Breakfast_t__c   +  Lunch_t__c  +  Dinner_t__c  +  Other_Food_t__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MEALS (t)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TOTAL_MEALS_th__c</fullName>
+        <externalId>false</externalId>
+        <formula>Breakfast_th__c   +  Lunch_th__c  +  Dinner_th__c  +  Other_Food_th__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MEALS (th)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TOTAL_MEALS_w__c</fullName>
+        <externalId>false</externalId>
+        <formula>Breakfast_w__c   +  Lunch_w__c  +  Dinner_w__c  +  Other_Food_w__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MEALS (w)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Taxi_f__c  +  Taxi_m__c  +  Taxi_t__c  +  Taxi_w__c  +  Taxi_th__c  +  Taxi_sa__c  +  Taxi_su__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Taxi Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_f__c</fullName>
+        <externalId>false</externalId>
+        <label>Taxi (f)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Taxi (m)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_sa__c</fullName>
+        <externalId>false</externalId>
+        <label>Taxi (sa)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_su__c</fullName>
+        <externalId>false</externalId>
+        <label>Taxi (su)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_t__c</fullName>
+        <externalId>false</externalId>
+        <label>Taxi (t)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_th__c</fullName>
+        <externalId>false</externalId>
+        <label>Taxi (th)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Taxi_w__c</fullName>
+        <externalId>false</externalId>
+        <label>Taxi (w)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Week_of__c</fullName>
+        <externalId>false</externalId>
+        <label>Week of</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Expense</label>
+    <listViews>
+        <fullName>AllExpenses</fullName>
+        <columns>Week_of__c</columns>
+        <columns>Projects__c</columns>
+        <columns>Resource__c</columns>
+        <columns>REPORT_TOTAL__c</columns>
+        <columns>Submit__c</columns>
+        <columns>Approve__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Expenses</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Expense {000}</displayFormat>
+        <label>Expense#</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Expenses</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Projects__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Resource__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Week_of__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Submit__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Approve__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Projects__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Resource__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Week_of__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Approve__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Submit__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Projects__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Resource__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Week_of__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Submit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Approve__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

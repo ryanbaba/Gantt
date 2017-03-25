@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Milestone1 Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Milestone1 Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- When a Task is marked &apos;Complete&apos;, Automatically unsubscribe the Assigned User from the Chatter Feed for the Task. --></help>
+        <label><!-- Auto UnFollow A Complete Task --></label>
+        <name>Auto_Follow_Complete_Task__c</name>
+    </fields>
+    <fields>
+        <help><!-- When a Task is Assigned to a User, automatically subscribe the user to follow the task. --></help>
+        <label><!-- Auto Follow A Task --></label>
+        <name>Auto_Follow_Task__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically unsubscribe the currently assigned user from the task when it is reassigned to another user. --></help>
+        <label><!-- Auto Unfollow Reassignment --></label>
+        <name>Auto_Unfollow_Reassignment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Insert a valid alias milestone by default to receive the mail about task&apos;s creation when a alias is not specified in the mail&apos;s subject. --></help>
+        <label><!-- Default Milestone Alias --></label>
+        <name>Default_Milestone_Alias__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

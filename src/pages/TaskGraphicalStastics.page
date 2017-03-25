@@ -1,0 +1,48 @@
+<apex:page showheader="false" sidebar="false" standardController="CM_Task__c">
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<!-- <apex:include pageName="header"/> -->
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Status', 'Count'],
+          ['Task Incurred Hrs',  {!CM_Task__c.Total_Hours__c}],
+          ['Task Balance Hrs ', {!CM_Task__c.Hours_Balance__c}],
+        ]);
+        var options = {
+          title: 'Project Hours Stastics',
+          pieHole: 0.2,
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+        
+      }
+    </script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Status', 'Count'],
+          ['Task Incurred Expense ',  {!CM_Task__c.Total_Expense__c}],
+          ['Task Balance Expense', {!CM_Task__c.Expense_Balance__c}],
+        ]);
+        var options = {
+          title: 'Project Expense Stastics',
+          pieHole: 0.2,
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('ExpensePieChart'));
+        chart.draw(data, options);
+        
+      }
+    </script>
+    <body>
+    <table class="columns">
+      <tr>
+        <td><div id="donutchart" style="width: 400px; height: 200px;"></div></td>
+        <td><div id="ExpensePieChart" style="width: 400px; height: 200px;"></div></td>
+      </tr>
+    </table>
+  </body>
+</apex:page>

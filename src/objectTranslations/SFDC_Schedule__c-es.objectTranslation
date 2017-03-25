@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Schedules</value>
+    </caseValues>
+    <fields>
+        <label><!-- Fri % --></label>
+        <name>Fri_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- F detail --></label>
+        <name>Fri_booked_detail__c</name>
+        <picklistValues>
+            <masterLabel>meetings</masterLabel>
+            <translation><!-- meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out-of-town</masterLabel>
+            <translation><!-- out-of-town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>work</masterLabel>
+            <translation><!-- work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mon % --></label>
+        <name>Mon_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- M detail --></label>
+        <name>Mon_booked_detail__c</name>
+        <picklistValues>
+            <masterLabel>meetings</masterLabel>
+            <translation><!-- meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out-of-town</masterLabel>
+            <translation><!-- out-of-town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>work</masterLabel>
+            <translation><!-- work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Projects__c</name>
+        <relationshipLabel><!-- Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>Resource__c</name>
+        <relationshipLabel><!-- Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sat % --></label>
+        <name>Sat_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sa detail --></label>
+        <name>Sat_booked_detail__c</name>
+        <picklistValues>
+            <masterLabel>meetings</masterLabel>
+            <translation><!-- meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out-of-town</masterLabel>
+            <translation><!-- out-of-town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>work</masterLabel>
+            <translation><!-- work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sun % --></label>
+        <name>Sun_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Su detail --></label>
+        <name>Sun_booked_detail__c</name>
+        <picklistValues>
+            <masterLabel>meetings</masterLabel>
+            <translation><!-- meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out-of-town</masterLabel>
+            <translation><!-- out-of-town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>work</masterLabel>
+            <translation><!-- work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Thu % --></label>
+        <name>Thu_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Th detail --></label>
+        <name>Thu_booked_detail__c</name>
+        <picklistValues>
+            <masterLabel>meetings</masterLabel>
+            <translation><!-- meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out-of-town</masterLabel>
+            <translation><!-- out-of-town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>work</masterLabel>
+            <translation><!-- work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tue % --></label>
+        <name>Tue_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- T detail --></label>
+        <name>Tue_booked_detail__c</name>
+        <picklistValues>
+            <masterLabel>meetings</masterLabel>
+            <translation><!-- meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out-of-town</masterLabel>
+            <translation><!-- out-of-town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>work</masterLabel>
+            <translation><!-- work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wed % --></label>
+        <name>Wed_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- W detail --></label>
+        <name>Wed_booked_detail__c</name>
+        <picklistValues>
+            <masterLabel>meetings</masterLabel>
+            <translation><!-- meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out-of-town</masterLabel>
+            <translation><!-- out-of-town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>work</masterLabel>
+            <translation><!-- work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Week of --></label>
+        <name>Week_of__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Schedule Layout</layout>
+        <sections>
+            <label><!-- Your schedule for this week --></label>
+            <section>Your schedule for this week</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

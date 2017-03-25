@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SFDC_Expense__c.Projects__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Expense__c.Billable_to__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Expense__c.Payable_to__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Expense__c.Week_of__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SFDC_Expense__c.REPORT_TOTAL__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Expense__c.Submit__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Expense__c.Approve__c</field>
+    </columns>
+    <description>What are the expenses for each resource?</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Expenses by Resource</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SFDC_Expense__c@SFDC_Expense__c.Resource__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SFDC_Expense__c.Week_of__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

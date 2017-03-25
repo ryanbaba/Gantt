@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Expense</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Expenses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Air Fare Total --></label>
+        <name>Air_Fare_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Purchase 1 Detail --></label>
+        <name>Air_Purchase_1_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Purchase 1 --></label>
+        <name>Air_Purchase_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Purchase 2 Detail --></label>
+        <name>Air_Purchase_2_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Purchase 2 --></label>
+        <name>Air_Purchase_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Purchase 3  Detail --></label>
+        <name>Air_Purchase_3_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Purchase 3 --></label>
+        <name>Air_Purchase_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve --></label>
+        <name>Approve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable to --></label>
+        <name>Billable_to__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Breakfast (su) --></label>
+        <name>Breakfast_Su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breakfast (f) --></label>
+        <name>Breakfast_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breakfast (m) --></label>
+        <name>Breakfast_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breakfast (sa) --></label>
+        <name>Breakfast_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breakfast (t) --></label>
+        <name>Breakfast_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breakfast (th) --></label>
+        <name>Breakfast_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breakfast (w) --></label>
+        <name>Breakfast_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Rental 1 Detail --></label>
+        <name>Car_Rental_1_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Rental 2 Detail --></label>
+        <name>Car_Rental_2_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Rental 3 Detail --></label>
+        <name>Car_Rental_3_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Rental Total 2 --></label>
+        <name>Car_Rental_Total_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Rental Total 3 --></label>
+        <name>Car_Rental_Total_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Rental Total --></label>
+        <name>Car_Rental_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Rental Total 1 --></label>
+        <name>Car_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dinner (f) --></label>
+        <name>Dinner_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dinner (m) --></label>
+        <name>Dinner_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dinner (sa) --></label>
+        <name>Dinner_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dinner (su) --></label>
+        <name>Dinner_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dinner (t) --></label>
+        <name>Dinner_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dinner (th) --></label>
+        <name>Dinner_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dinner (w) --></label>
+        <name>Dinner_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas Total --></label>
+        <name>Gas_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas (f) --></label>
+        <name>Gas_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas (m) --></label>
+        <name>Gas_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas (sa) --></label>
+        <name>Gas_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas (su) --></label>
+        <name>Gas_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas (t) --></label>
+        <name>Gas_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas (th) --></label>
+        <name>Gas_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas (w) --></label>
+        <name>Gas_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel &amp; Tax (f) --></label>
+        <name>Hotel_Tax_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel &amp; Tax (m) --></label>
+        <name>Hotel_Tax_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel &amp; Tax (sa) --></label>
+        <name>Hotel_Tax_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel &amp; Tax (su) --></label>
+        <name>Hotel_Tax_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel &amp; Tax (t) --></label>
+        <name>Hotel_Tax_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel &amp; Tax (th) --></label>
+        <name>Hotel_Tax_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel &amp; Tax (w) --></label>
+        <name>Hotel_Tax_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel Total --></label>
+        <name>Hotel_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet Total --></label>
+        <name>Internet_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet (f) --></label>
+        <name>Internet_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet (m) --></label>
+        <name>Internet_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet (sa) --></label>
+        <name>Internet_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet (su) --></label>
+        <name>Internet_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet (t) --></label>
+        <name>Internet_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet (th) --></label>
+        <name>Internet_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet (w) --></label>
+        <name>Internet_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry (su) --></label>
+        <name>Laundry_Su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry Total --></label>
+        <name>Laundry_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry (f) --></label>
+        <name>Laundry_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry (m) --></label>
+        <name>Laundry_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry (sa) --></label>
+        <name>Laundry_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry (t) --></label>
+        <name>Laundry_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry (th) --></label>
+        <name>Laundry_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laundry (w) --></label>
+        <name>Laundry_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch (f) --></label>
+        <name>Lunch_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch (m) --></label>
+        <name>Lunch_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch (sa) --></label>
+        <name>Lunch_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch (su) --></label>
+        <name>Lunch_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch (t) --></label>
+        <name>Lunch_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch (th) --></label>
+        <name>Lunch_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch (w) --></label>
+        <name>Lunch_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meals Total --></label>
+        <name>Meals_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Total --></label>
+        <name>Mileage_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage (f) --></label>
+        <name>Mileage_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage (m) --></label>
+        <name>Mileage_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage (sa) --></label>
+        <name>Mileage_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage (su) --></label>
+        <name>Mileage_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage (t) --></label>
+        <name>Mileage_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage (th) --></label>
+        <name>Mileage_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage (w) --></label>
+        <name>Mileage_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 1 (f) --></label>
+        <name>Misc_1_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 1 (m) --></label>
+        <name>Misc_1_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 1 (sa) --></label>
+        <name>Misc_1_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 1 (su) --></label>
+        <name>Misc_1_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 1 (t) --></label>
+        <name>Misc_1_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 1 (th) --></label>
+        <name>Misc_1_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 1 (w) --></label>
+        <name>Misc_1_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 2 (f) --></label>
+        <name>Misc_2_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 2 (m) --></label>
+        <name>Misc_2_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 2 (sa) --></label>
+        <name>Misc_2_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 2 (su) --></label>
+        <name>Misc_2_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 2 (t) --></label>
+        <name>Misc_2_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 2 (th) --></label>
+        <name>Misc_2_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc 2 (w) --></label>
+        <name>Misc_2_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes (f) --></label>
+        <name>Notes_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes (m) --></label>
+        <name>Notes_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes (sa) --></label>
+        <name>Notes_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes (su) --></label>
+        <name>Notes_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes (t) --></label>
+        <name>Notes_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes (th) --></label>
+        <name>Notes_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes (w) --></label>
+        <name>Notes_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Food (f) --></label>
+        <name>Other_Food_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Food (m) --></label>
+        <name>Other_Food_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Food (sa) --></label>
+        <name>Other_Food_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Food (su) --></label>
+        <name>Other_Food_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Food (t) --></label>
+        <name>Other_Food_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Food (th) --></label>
+        <name>Other_Food_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Food (w) --></label>
+        <name>Other_Food_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Total --></label>
+        <name>Other_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payable to --></label>
+        <name>Payable_to__c</name>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Projects__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- REPORT TOTAL --></label>
+        <name>REPORT_TOTAL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>Resource__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submit --></label>
+        <name>Submit__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL MEALS (f) --></label>
+        <name>TOTAL_MEALS_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL MEALS (m) --></label>
+        <name>TOTAL_MEALS_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL MEALS (sa) --></label>
+        <name>TOTAL_MEALS_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL MEALS (su) --></label>
+        <name>TOTAL_MEALS_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL MEALS (t) --></label>
+        <name>TOTAL_MEALS_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL MEALS (th) --></label>
+        <name>TOTAL_MEALS_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL MEALS (w) --></label>
+        <name>TOTAL_MEALS_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi Total --></label>
+        <name>Taxi_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi (f) --></label>
+        <name>Taxi_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi (m) --></label>
+        <name>Taxi_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi (sa) --></label>
+        <name>Taxi_sa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi (su) --></label>
+        <name>Taxi_su__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi (t) --></label>
+        <name>Taxi_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi (th) --></label>
+        <name>Taxi_th__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxi (w) --></label>
+        <name>Taxi_w__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week of --></label>
+        <name>Week_of__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Expense Layout</layout>
+        <sections>
+            <label><!-- Air Fare Expenses --></label>
+            <section>Air Fare Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Car Rental Expenses --></label>
+            <section>Car Rental Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Friday Expenses --></label>
+            <section>Friday Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Monday Expenses --></label>
+            <section>Monday Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Saturday Expenses --></label>
+            <section>Saturday Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Sub-Totals --></label>
+            <section>Sub-Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Sunday Expenses --></label>
+            <section>Sunday Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Thursday Expenses --></label>
+            <section>Thursday Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Tuesday Expenses --></label>
+            <section>Tuesday Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Wednesday Expenses --></label>
+            <section>Wednesday Expenses</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

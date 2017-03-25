@@ -1,0 +1,59 @@
+<apex:page standardStylesheets="false" showHeader="false" controller="ProjectRecods" title="360 Project View">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"></meta>
+        <title>Project duration</title>
+    </head>
+       
+    <apex:includeScript value="{!URLFOR($Resource.Timeline, 'codebase/dhtmlxgantt.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Timeline, 'codebase/ext/dhtmlxgantt_tooltip.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Timeline, 'codebase/dhtmlxgantt.css')}"/>
+    
+    
+       
+    <style type="text/css">
+        html, body{ height:100%; padding:0px; margin:0px; overflow: hidden;}
+        .gantt_task_line.gantt_dependent_task {
+        }
+     </style>
+    <body>
+        <div id="gantt_here" style='width:100%; height:90%;'></div>
+        <script type="text/javascript">
+            
+             
+            var test = '{!str4}';
+            var demo_tasks = test ;
+            gantt.config.lightbox.sections = [
+                {name: "description", height: 70, map_to: "text", type: "textarea", focus: true},
+                {name: "time", type: "duration", map_to: "auto"}
+            ];
+    
+           gantt.config.columns = [
+               {name:"Name",label:"Task name",  width:"*", tree:true,resize:true },
+               {name:"start_date", label:"Start Date", align: "center",resize:true },
+               {name:"end_date",label:"End Date",align: "center" ,resize:true},
+               {name:"duration",label:"Duration",align:"center",resize:true },
+               
+           ];
+            
+           
+            
+           
+            gantt.templates.tooltip_text = function(start,end,task){
+                return "<b>Start Date:</b> "+task.start_date+"<br/><b>End Date:</b> " + task.end_date+"<br/><b>Stage:</b> " + task.Task_Stage+"<br/><b>Resource Assigned:</b> " + task.Assigned_To__r.Name;
+            };
+            gantt.config.show_progress = true;
+            gantt.config.scale_unit = '{!scaleUnit}';
+            gantt.config.date_scale = "%F,%D,%Y";
+            gantt.init("gantt_here");
+            gantt.parse(demo_tasks);
+        </script>
+    </body>
+    <br/>
+    <apex:form >
+        <div align="center" draggable="false" >
+            <apex:commandButton value="Back" action="{!retProject}"/>
+            
+        </div>
+    </apex:form>
+    
+</apex:page>

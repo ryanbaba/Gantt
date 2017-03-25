@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Milestone1 Settings</value>
+    </caseValues>
+    <fields>
+        <help>タスクが完了済みになったときに自動的にタスクのChatterフィードのユーザ割り当てを解除します。</help>
+        <label>自動完了タスクフォロー解除</label>
+        <name>Auto_Follow_Complete_Task__c</name>
+    </fields>
+    <fields>
+        <help>ユーザがタスクに割り当てられた時に、自動的にユーザにタスクをフォローさせます。</help>
+        <label>自動タスクフォロー</label>
+        <name>Auto_Follow_Task__c</name>
+    </fields>
+    <fields>
+        <help>別ユーザが割り当てられた時に自動的に現在のユーザの登録を解除します。</help>
+        <label>自動再割り当てフォロー解除</label>
+        <name>Auto_Unfollow_Reassignment__c</name>
+    </fields>
+    <fields>
+        <help>エイリアスがメールサブジェクトに設定されていない場合は、デフォルトではタスク作成のメールを受信した時に有効なエイリアスのマイルストーンを挿入します。</help>
+        <label>デフォルトマイルストーンエイリアス</label>
+        <name>Default_Milestone_Alias__c</name>
+    </fields>
+</CustomObjectTranslation>

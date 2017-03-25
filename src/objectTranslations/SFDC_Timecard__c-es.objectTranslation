@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timecard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Timecards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approve --></label>
+        <name>Approve__c</name>
+    </fields>
+    <fields>
+        <label><!-- F Notes --></label>
+        <name>F_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fri --></label>
+        <name>Fri__c</name>
+    </fields>
+    <fields>
+        <label><!-- Th Notes --></label>
+        <name>H_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- M Notes --></label>
+        <name>M_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mon --></label>
+        <name>Mon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Projects__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>Resource__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sa Notes --></label>
+        <name>Sa_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sat --></label>
+        <name>Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Su  Notes --></label>
+        <name>Su_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit --></label>
+        <name>Submit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sun --></label>
+        <name>Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- T Notes --></label>
+        <name>T_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thu --></label>
+        <name>Thu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tue --></label>
+        <name>Tue__c</name>
+    </fields>
+    <fields>
+        <label><!-- W Notes --></label>
+        <name>W_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wed --></label>
+        <name>Wed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week of --></label>
+        <name>Week_of__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Timecard Layout</layout>
+        <sections>
+            <label><!-- Days and Times --></label>
+            <section>Days and Times</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

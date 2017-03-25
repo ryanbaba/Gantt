@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Edition__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Licenses__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_1_Type__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_1__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_2_Type__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_2__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_3_Type__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_3__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_4_Type__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Projects__c.Condition_4__c</field>
+    </columns>
+    <description>What types of projects are we working on?</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SFDC_Projects__c.Project_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Project Intelligence by Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SFDC_Projects__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

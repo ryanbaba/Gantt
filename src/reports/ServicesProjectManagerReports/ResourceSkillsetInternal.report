@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Client_Engagement_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Custom_Objects_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Data_Migration_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Integration_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Large_Project_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Marketing_Topic_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.sForce_Controls_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Support_Topics_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Training_Skills__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Resource__c.Foreign_Languages__c</field>
+    </columns>
+    <description>What is the performance skillset of our internal resources?</description>
+    <filter>
+        <criteriaItems>
+            <column>SFDC_Resource__c.External_Resource__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Resource Skillset - Internal</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SFDC_Resource__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SFDC_Resource__c.Date_of_Last_Authorization__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

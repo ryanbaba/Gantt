@@ -1,0 +1,248 @@
+<apex:page showHeader="false" sidebar="false" controller="GanttChartv2_Ctrl">
+    <html>
+        <head>
+            <title>Project-360 View</title>
+            <apex:includeScript value="{!URLFOR($Resource.Timeline, 'codebase/dhtmlxgantt.js')}"/>
+            <apex:includeScript value="{!URLFOR($Resource.Timeline, 'codebase/ext/dhtmlxgantt_tooltip.js')}"/>
+            <apex:stylesheet value="{!URLFOR($Resource.Timeline, 'codebase/skins/dhtmlxgantt_broadway.css')}"/>
+            
+            <style type="text/css">
+                
+                html, body{ height:100%; padding:0px; margin:0px; overflow: hidden;}
+                 .bg-loading {
+		            background-color: #fbfbfb;
+		            top: 0;
+		            bottom: 0;
+		            left: 0;
+		            right: 0;
+		            opacity:0.8;
+		            text-align:center; /* Align center inline elements */
+		            font: 0/0 a;
+		            z-index: 1150;
+		            position:       fixed;
+		            width:          100%;
+		            height:         100%;
+		        }
+
+		        .bg-loading:before {
+		            content: ' ';
+		            display: inline-block;
+		            vertical-align: middle;
+		            height: 100%;
+		        }
+
+		        .bg-loading img {
+		            vertical-align: middle;
+		            display: inline-block;
+		            width: 10%;
+		        }
+            </style>
+        </head>
+        <body>
+           <!--Loading Img  -->
+		   <div class="bg-loading" style="display: block;"> 
+		      <img class="waitingImage" src= "{!$Resource.SLDSLoading}" title="Please Wait..." />
+		      <br/>Please Wait...
+		  </div>
+            <div id="gantt_here" style='width:100%; height:100%;'></div>
+            <script type="text/javascript">
+            
+            
+            // var demo_tasks = {
+            //                  "data":[
+            //                      {"id":1, "text":"Project #1", "start_date":"01-04-2017", "duration":"11", "progress": 0.6, "open": true, "users": ["John", "Mike", "Anna"], "priority": "2"},
+            //                      {"id":2, "text":"Task #1", "start_date":"03-04-2017", "duration":"5", "parent":"1", "progress": 1, "open": true, "users": ["John", "Mike"], "priority": "1"},
+            //                      {"id":3, "text":"Task #2", "start_date":"02-04-2017", "duration":"7", "parent":"1", "progress": 0.5, "open": true, "users": ["Anna"], "priority": "1"},
+            //                      {"id":4, "text":"Task #3", "start_date":"02-04-2017", "duration":"6", "parent":"1", "progress": 0.8, "open": true, "users": ["Mike", "Anna"], "priority": "2"},
+            //                  ]
+            //                  // "links":[
+            //                  //     {"id":"1","source":"1","target":"2","type":"1"},
+            //                  //     {"id":"2","source":"2","target":"3","type":"0"},
+            //                  //     {"id":"3","source":"3","target":"4","type":"0"}
+            
+            //                  // ]  
+            //              };
+            
+            
+            var newData = {
+                id : '',
+                text : '',
+                start_date : '',
+                duration : null,
+                users :[],
+                parent : '',
+                status:''
+            };
+            
+            var demo_tasks;
+            const bgLoaderDiv = document.getElementsByClassName('bg-loading');
+            //Get the Project-Task data - in - JsonData
+            var projectId = '{!$CurrentPage.parameters.id}';
+            console.log('projectId '+projectId);
+            GanttChartv2_Ctrl.getProjectInfo( projectId,function(result,event) {
+                // body...
+                if(event.status) {
+                    console.log(result); 
+                    demo_tasks = result;
+                    
+                    gantt.init("gantt_here");
+                    gantt.parse(demo_tasks);
+                    bgLoaderDiv[0].style.display = 'none';
+                }else {
+                    alert('got an exception '+event.message);
+                }
+            });
+            
+            //Get the contacts
+            var contacts = [];
+            GanttChartv2_Ctrl.getContacts( function(result,event) {
+                // body...
+                if(event.status) {
+                    // console.log(result); 
+                    result.forEach(function(con) {
+                        contacts.push({key:con.Id,label:con.Name});
+                    });   
+                    
+                }else {
+                    alert('got an exception '+event.message);
+                }
+            });
+
+             //Get the contacts
+            var taskStatus = [
+	            {key:"Open",label:"Open"},
+	            {key:"In Progress",label:"In Progress"},
+	            {key:"Resolved",label:"Resolved"},
+	            {key:"Closed",label:"Closed"},
+	            {key:"Close",label:"Close"}
+	        ];
+	        
+            gantt.locale.labels.section_assignedTo = "Assigned To";  
+            gantt.locale.labels.section_status = "Status";  
+            gantt.config.lightbox.sections = [
+                {name: "description", height: 38, map_to: "text", type: "textarea", focus: true},
+                {name: "status", height: 22, map_to: "status", type: "select", options:taskStatus},
+                {name: "assignedTo", height: 22, map_to: "assignedTo", type: "select", options:contacts},
+                {name: "time", type: "duration", map_to: "auto"}
+            ];
+            
+            gantt.templates.task_class = function(st,end,item){
+                return item.$level==0?"gantt_project":""
+            };
+            gantt.config.columns = [
+                {name:"text",       label:"Name",  width:"*", tree:true },
+                {name:"start_time",   label:"Start date",  template:function(obj){
+                    return gantt.templates.date_grid(obj.start_date);
+                }, align: "center", width:60 },
+                {name:"end_date",   label:"End date",  template:function(obj){
+                    return gantt.templates.date_grid(obj.end_date);
+                }, align: "center", width:60 },
+                {name:"duration",   label:"Duration", align:"center", width:60},
+                {name:"add",        label:"",           width:44 }
+            ];
+            
+            gantt.config.grid_width = 400;
+            gantt.config.date_grid = "%F %d";
+            gantt.config.scale_height  = 60;
+            gantt.config.subscales = [
+                {unit:"month", step:1, date:"%F, %Y" },
+                { unit:"week", step:1, date:"Week #%W"}
+            ];
+            // gantt.init("gantt_here");
+            // gantt.parse(demo_tasks);
+            
+            gantt.attachEvent("onLightboxSave", function(id, task, is_new){
+                               
+                console.log('task '+task.unscheduled);
+                console.log(task);
+                console.log('Is new Task ?'+is_new);
+
+
+
+
+                // if(task.parent === 0) task.parent = projectId;
+                
+                 if(!task.text){
+			        gantt.message({type:"error", text:"Enter task description!"});
+			        return false;
+			    }
+			    if(!task.assignedTo){
+			        gantt.message({type:"error", text:"Choose a worker for this task!"});
+			        return false;
+			    }
+
+			    // if(is_new === false){
+			    // 	alert('Update the task..');
+			    // 	task.Id = null;
+			    // }
+
+                var assignedToUser = [];
+                
+                assignedToUser.push(task.assignedTo);
+                
+                newData.text = task.text;
+                newData.start_date = convert(task.start_date);
+                newData.end_date = convert(task.end_date);
+                newData.duration = task.duration;
+                newData.parent = task.parent;
+                newData.users = assignedToUser;
+                newData.status = task.status;
+
+                 if(is_new === true){
+			    	newData.Id = null;
+			    }else{
+			    	alert('Update the task..'+task.id);
+			    	console.log(task.id);
+			    	newData.id = task.id;
+			    }
+
+                console.log('Sending new Data '+newData);
+                
+                GanttChartv2_Ctrl.upsertTask(projectId, newData,is_new,
+
+                	function(result,event) {
+                    // body...
+                    if(event.status) {
+                        console.log(result); 
+                        
+                    }else {
+                        
+                        alert('got an exception '+event.message);
+                    }
+                });
+                
+                return true;
+            });
+
+             function convert(str) {
+	                var date = new Date(str),
+	                    mnth = ("0" + (date.getMonth()+1)).slice(-2),
+	                    day  = ("0" + date.getDate()).slice(-2);
+	                return [mnth, day, date.getFullYear()].join("/");
+	            }
+            
+
+
+            gantt.attachEvent("onLightboxDelete", function(id, task, is_new){
+                console.log(id);
+
+                GanttChartv2_Ctrl.deleteTask(id,function(result,event) {
+                    // body...
+                    if(event.status) {
+                        console.log(result); 
+                        if(result === true){
+                        	gantt.deleteTask(id);
+                        	gantt.message("Delete successfully");
+                        }
+                        
+                    }else {
+                        alert('got an exception '+event.message);
+                    }
+                });
+
+                return true;
+            });
+            </script>
+        </body>
+    </html>
+</apex:page>

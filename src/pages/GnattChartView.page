@@ -1,0 +1,49 @@
+<apex:page controller="googlegantchart">
+<apex:includeScript id="a" value="https://www.google.com/jsapi" />
+<apex:sectionHeader title="Google Charts + Javascript Remoting" subtitle="Demo of Opportunity Stages" />
+<div id="chart_div" />
+ 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript">
+ <!--loads the visualization in gant chart view-->
+ google.charts.load('current', { 'packages': ['gantt']});
+ google.charts.setOnLoadCallback(InitCharts);
+
+    function InitCharts() {
+    
+    function InitCharts() {
+     <!-- calls the function called 'loadrecords' in googlegantchart controller-->
+     googlegantchart.loadrecords(
+     <!-- following the usual remoting syntax-->
+     function(result, event) {
+     
+     var visualization = new google.visualization.Gantt(document.getElementById('chart_div'));
+     <!--adding data to Chart-->
+     var data = new google.visualization.DataTable();<!-- variable declaration-->
+      
+     data.addColumn('string', 'Task ID');
+     data.addColumn('string', 'Task Name');
+     data.addColumn('date', 'Start Date');
+     data.addColumn('date', 'End Date');
+     data.addColumn('number', 'Duration');
+     data.addColumn('number', 'Percent Complete');
+     
+     alert(result);
+     for (var i = 0; i < result.length; i++) {
+     var r = result[i];
+     data.addRow([r.Id, r.Name, new Date(r.Start_Dates__c), new Date(r.Due_Date__c), r.Task_Duration__c,r.Task_Completion__c]);
+     }
+     var options = {
+     height: 275,
+     gantt: {
+     criticalPathEnabled:true
+     }
+     };
+     visualization.draw(data, options);
+     },{escape:true});
+     }
+    
+    
+   </script>
+ 
+</apex:page>

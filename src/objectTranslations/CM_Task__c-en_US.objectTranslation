@@ -129,6 +129,10 @@
         <name>Task_Duration__c</name>
     </fields>
     <fields>
+        <label><!-- Task Progress --></label>
+        <name>Task_Progress__c</name>
+    </fields>
+    <fields>
         <label><!-- Stage --></label>
         <name>Task_Stage__c</name>
         <picklistValues>
@@ -144,8 +148,8 @@
             <translation><!-- In Progress --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>None</masterLabel>
-            <translation><!-- None --></translation>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Resolved</masterLabel>

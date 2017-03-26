@@ -295,6 +295,6 @@
 {!REQUIRESCRIPT(&quot;/soap/ajax/10.0/apex.js&quot;)} 
 
 // Do some validation here 
-parent.window.location = &apos;/apex/GanttChart?retURL=%2F{!CM_Project__c.Id}&amp;id={!CM_Project__c.Id}&apos;;</url>
+parent.window.location = &apos;/apex/GanttChartv2?retURL=%2F{!CM_Project__c.Id}&amp;id={!CM_Project__c.Id}&apos;;</url>
     </webLinks>
 </CustomObject>

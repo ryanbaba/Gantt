@@ -65,6 +65,11 @@ public class GanttChartv2_Ctrl {
     public static List<Contact> getContacts(){
         return [Select Id,Name from Contact limit 10];
     }
+
+    @RemoteAction
+    public static List<Holiday> getHolidays(){
+        return [Select Id,Name,IsAllDay,ActivityDate From Holiday order by ActivityDate];
+    }
     
     @RemoteAction
     public static Id upsertTask(String projectId, data newData,Boolean isNew){

@@ -13,7 +13,7 @@ public class GanttChartv2_Ctrl {
         List<data> tasks = new List<data>();
         
         for(CM_Project__c proj : [Select Id,Name,Duration__c,Kickoff__c,DeadLine__c,
-                                  (Select Id,Name,start_date__c,end_date__c,Task_Stage__c,Predecessor_Task__c from Tasks__r) 
+                                  (Select Id,Name,start_date__c,end_date__c,Task_Stage__c,Assigned_To__c,Predecessor_Task__c,Task_Progress__c from Tasks__r) 
                                   from CM_Project__c where Id =:projectId])
         {
             
@@ -37,13 +37,14 @@ public class GanttChartv2_Ctrl {
                 tk.staus = task.Task_Stage__c;
                 tk.id = task.Id;
                 tk.text = task.Name;
-
+				tk.progress = task.Task_Progress__c!=null?task.Task_Progress__c/100 :null;
                 if(task.Predecessor_Task__c != null){
                     tk.parent = task.Predecessor_Task__c;
                 }else{
                     tk.parent = proj.Id;
                 }
-                
+                tk.assignedTo = task.Assigned_To__c!=null?string.valueOf(task.Assigned_To__c):null;
+                tk.status = task.Task_Stage__c;
                 tk.start_date = task.start_date__c;
                 tk.end_date = task.end_date__c;
                 tk.open = true;
@@ -64,6 +65,11 @@ public class GanttChartv2_Ctrl {
     public static List<Contact> getContacts(){
         return [Select Id,Name from Contact limit 10];
     }
+
+    @RemoteAction
+    public static List<Holiday> getHolidays(){
+        return [Select Id,Name,IsAllDay,ActivityDate From Holiday order by ActivityDate];
+    }
     
     @RemoteAction
     public static Id upsertTask(String projectId, data newData,Boolean isNew){
@@ -83,13 +89,14 @@ public class GanttChartv2_Ctrl {
 
         if(!isNew){
             system.debug('isNew '+isNew+newData.id);
-            newTask.Id = newData.id;
-
+            newTask.Id = newData.id;           
+        }else{
+            newTask.ProjectName__c = projectId; 
         }
        
         newTask.Name = newData.text;
         newTask.Start_Dates__c = Date.parse(newData.start_date);
-        newTask.ProjectName__c = projectId;
+       
         newTask.Task_Stage__c = newData.status;
         newTask.Due_Date__c = Date.parse(newData.end_date);
         newTask.Assigned_To__c = newData.users[0];
@@ -106,6 +113,37 @@ public class GanttChartv2_Ctrl {
         return true;
     }
     
+    @RemoteAction
+    public static Id udpateTask(updateTask task){
+        
+        CM_Task__c upTask = new CM_Task__c();
+        upTask.id = task.id;
+        upTask.Start_Dates__c = Date.parse(task.start_date);
+        upTask.Due_Date__c = Date.parse(task.end_date);
+       
+        update upTask;
+        return upTask.id;
+    }
+    //Task_Progress__c
+	
+    @RemoteAction
+    public static Id udpateProgressTask(String taskId, Decimal progress){
+        
+        CM_Task__c upTask = new CM_Task__c();
+        upTask.id = taskId;
+        upTask.Task_Progress__c = progress*100;
+        update upTask;
+        
+        return upTask.id;
+    }
+    
+    public class updateTask{
+        public string id;
+        public string start_date;
+        public string end_date;
+    }
+    
+    
     public class projectInfo{
         public List<data> data;
         public List<link> link;
@@ -119,8 +157,9 @@ public class GanttChartv2_Ctrl {
         public string duration;
         public string status;
         public string parent;
+        public string assignedTo;
         public string staus;
-        public Integer progress;
+        public Decimal progress;
         public Boolean open;
         public String[] users;
         public String priority;
